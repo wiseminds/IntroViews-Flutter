@@ -120,13 +120,13 @@ class IntroViewsFlutter extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _IntroViewsFlutterState createState() => _IntroViewsFlutterState();
+  IntroViewsFlutterState createState() => IntroViewsFlutterState();
 }
 
 /// State of above widget.
 /// It extends the TickerProviderStateMixin as it is used for animation control (vsync).
 
-class _IntroViewsFlutterState extends State<IntroViewsFlutter>
+class IntroViewsFlutterState extends State<IntroViewsFlutter>
     with TickerProviderStateMixin {
   StreamController<SlideUpdate>
       // ignore: close_sinks
