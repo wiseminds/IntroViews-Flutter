@@ -158,8 +158,10 @@ class IntroViewsFlutterState extends State<IntroViewsFlutter>
           //conditions on slide direction
           if (slideDirection == SlideDirection.leftToRight) {
             nextPageIndex = max(0, activePageIndex - 1);
+              widget.onTapNextButton();
           } else if (slideDirection == SlideDirection.rightToLeft) {
             nextPageIndex = min(widget.pages.length - 1, activePageIndex + 1);
+              widget.onTapBackButton();
           } else {
             nextPageIndex = activePageIndex;
           }
